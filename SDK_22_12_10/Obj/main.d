@@ -56,6 +56,7 @@
 .\obj\main.o: .\Libraries\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h
 .\obj\main.o: .\Libraries\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h
 .\obj\main.o: .\Libraries\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_mmc.h
-.\obj\main.o: .\hxq\drive\LED\hxq_drv_led.h
 .\obj\main.o: .\Public\sysTick.h
+.\obj\main.o: .\hxq\drive\LED\hxq_drv_led.h
 .\obj\main.o: .\hxq\drive\BEEP\hxq_drv_beep.h
+.\obj\main.o: .\hxq\drive\KEY\hxq_drv_key.h
