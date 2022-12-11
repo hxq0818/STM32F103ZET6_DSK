@@ -3,7 +3,7 @@
 #include "hxq_drv_led.h"
 #include "hxq_drv_beep.h"
 #include "hxq_drv_key.h"
-
+#include "hxq_drv_exti.h"
 /*******************************************************************************
 * 函 数 名         : main
 * 函数功能		   : 主函数
@@ -19,6 +19,7 @@ int main()
 	SysTick_Init(72);
 	LED_Init();
 	KEY_Init();
+	EXTI_Init();
 	
 	while(1)
 	{
