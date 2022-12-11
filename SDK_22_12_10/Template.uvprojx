@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xE</Define>
               <Undefine></Undefine>
-              <IncludePath>.\Libraries\CMSIS;.\Libraries\STM32F1xx_HAL_Driver\Inc;.\User;.\Public;.\APP\led;.\hxq\drive\LED</IncludePath>
+              <IncludePath>.\Libraries\CMSIS;.\Libraries\STM32F1xx_HAL_Driver\Inc;.\User;.\Public;.\APP\led;.\hxq\drive\LED;.\hxq\drive\BEEP</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -499,6 +499,11 @@
               <FileName>hxq_drv_led.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\hxq\drive\LED\hxq_drv_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>hxq_drv_beep.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hxq\drive\BEEP\hxq_drv_beep.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -89,4 +89,4 @@ typedef __I uint8_t vuc8;
 
 void SystemClock_Init(u32 PLL);
 
-#endif
+#endif /*! _system_H */

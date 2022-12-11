@@ -1,7 +1,7 @@
 #include "system.h"
 #include "hxq_drv_led.h"
 #include "sysTick.h"
-
+#include "hxq_drv_beep.h"
 
 /*******************************************************************************
 * º¯ Êý Ãû         : main
@@ -20,6 +20,8 @@ int main()
 	while(1)
 	{
 		HAL_GPIO_TogglePin(LED1_PORT,LED1_PIN);
+		HAL_GPIO_TogglePin(LED2_PORT,LED1_PIN);
+		HAL_GPIO_TogglePin(BEEP_PORT,BEEP_PIN);
 		HAL_Delay(1000);
 	}
 }

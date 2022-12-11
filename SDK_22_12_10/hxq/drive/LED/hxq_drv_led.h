@@ -20,4 +20,4 @@
 
 void LED_Init(void);
 
-#endif /* _HXQ_DRV_LEC_H */
+#endif /*! _HXQ_DRV_LEC_H */
