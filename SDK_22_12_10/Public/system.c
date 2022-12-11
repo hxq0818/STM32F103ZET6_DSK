@@ -13,7 +13,7 @@ void SystemClock_Init(u32 PLL)
     
     RCC_OscInitStructure.OscillatorType=RCC_OSCILLATORTYPE_HSE;    	//时钟源为HSE
     RCC_OscInitStructure.HSEState=RCC_HSE_ON;                      	//打开HSE
-	RCC_OscInitStructure.HSEPredivValue=RCC_HSE_PREDIV_DIV1;		//HSE预分频
+		RCC_OscInitStructure.HSEPredivValue=RCC_HSE_PREDIV_DIV1;		//HSE预分频
     RCC_OscInitStructure.PLL.PLLState=RCC_PLL_ON;					//打开PLL
     RCC_OscInitStructure.PLL.PLLSource=RCC_PLLSOURCE_HSE;			//PLL时钟源选择HSE
     RCC_OscInitStructure.PLL.PLLMUL=PLL; 							//主PLL倍频因子
