@@ -4,6 +4,8 @@
 #include "hxq_drv_beep.h"
 #include "hxq_drv_key.h"
 #include "hxq_drv_exti.h"
+#include "hxq_drv_time.h"
+
 /*******************************************************************************
 * 函 数 名         : main
 * 函数功能		   : 主函数
@@ -20,6 +22,7 @@ int main()
 	LED_Init();
 	KEY_Init();
 	EXTI_Init();
+	TIM3_Init(1000-1,36000-1);  //定时500ms
 	
 	while(1)
 	{

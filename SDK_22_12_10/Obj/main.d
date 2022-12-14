@@ -61,3 +61,4 @@
 .\obj\main.o: .\hxq\drive\BEEP\hxq_drv_beep.h
 .\obj\main.o: .\hxq\drive\KEY\hxq_drv_key.h
 .\obj\main.o: .\hxq\drive\EXTI\hxq_drv_exti.h
+.\obj\main.o: .\hxq\drive\TIME\hxq_drv_time.h
