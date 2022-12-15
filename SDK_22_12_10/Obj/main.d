@@ -62,3 +62,4 @@
 .\obj\main.o: .\hxq\drive\KEY\hxq_drv_key.h
 .\obj\main.o: .\hxq\drive\EXTI\hxq_drv_exti.h
 .\obj\main.o: .\hxq\drive\TIME\hxq_drv_time.h
+.\obj\main.o: .\hxq\drive\PWM\hxq_drv_pwm.h

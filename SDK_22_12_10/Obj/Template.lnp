@@ -69,6 +69,7 @@
 ".\obj\hxq_drv_key.o"
 ".\obj\hxq_drv_exti.o"
 ".\obj\hxq_drv_time.o"
+".\obj\hxq_drv_pwm.o"
 --library_type=microlib --strict --scatter ".\Obj\Template.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

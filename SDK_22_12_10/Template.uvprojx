@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xE</Define>
               <Undefine></Undefine>
-              <IncludePath>.\Libraries\CMSIS;.\Libraries\STM32F1xx_HAL_Driver\Inc;.\User;.\Public;.\APP\led;.\hxq\drive\LED;.\hxq\drive\BEEP;.\hxq\drive\KEY;.\hxq\drive\EXTI;.\hxq\drive\TIME</IncludePath>
+              <IncludePath>.\Libraries\CMSIS;.\Libraries\STM32F1xx_HAL_Driver\Inc;.\User;.\Public;.\APP\led;.\hxq\drive\LED;.\hxq\drive\BEEP;.\hxq\drive\KEY;.\hxq\drive\EXTI;.\hxq\drive\TIME;.\hxq\drive\PWM</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -779,6 +779,11 @@
               <FileName>hxq_drv_time.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\hxq\drive\TIME\hxq_drv_time.c</FilePath>
+            </File>
+            <File>
+              <FileName>hxq_drv_pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hxq\drive\PWM\hxq_drv_pwm.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -5,6 +5,7 @@
 #include "hxq_drv_key.h"
 #include "hxq_drv_exti.h"
 #include "hxq_drv_time.h"
+#include "hxq_drv_pwm.h"
 
 /*******************************************************************************
 * 函 数 名         : main
@@ -14,7 +15,8 @@
 *******************************************************************************/
 int main()
 {
-	u8 key,i=0;
+	u16 i=0;
+	u8 key,fx=0;
 	
 	HAL_Init();                     //初始化HAL库 
 	SystemClock_Init(RCC_PLL_MUL9); //设置时钟,72M
@@ -23,22 +25,28 @@ int main()
 	KEY_Init();
 	EXTI_Init();
 	TIM3_Init(1000-1,36000-1);  //定时500ms
+	TIM3_CH2_PWM_Init(500-1,72-1); //频率是2Kh
 	
 	while(1)
 	{
-		key=KEY_Scan(0);   //扫描按键
-		switch(key)
+		if(fx==0)
 		{
-			case KEY_UP_PRESS: HAL_GPIO_TogglePin(LED2_PORT,LED1_PIN);break;   //点亮DS1指示灯
-			case KEY1_PRESS: HAL_GPIO_TogglePin(LED2_PORT,LED1_PIN);break;    //熄灭DS1指示灯
-			case KEY2_PRESS: HAL_GPIO_TogglePin(BEEP_PORT,BEEP_PIN);break;    //蜂鸣器开
-			case KEY0_PRESS: HAL_GPIO_TogglePin(BEEP_PORT,BEEP_PIN);break;    //蜂鸣器关
+			i++;
+			if(i==300)
+			{
+				fx=1;
+			}
 		}
-		i++;
-		if(i%20==0)
+		else
 		{
-			HAL_GPIO_TogglePin(LED1_PORT,LED1_PIN);     //LED1状态取反
+			i--;
+			if(i==0)
+			{
+				fx=0;
+			}
 		}
+		TIM3_SetCompare2(i);  //i值最大可以取499，因为ARR最大值是499.
+
 		HAL_Delay(10);
 	}
 }
