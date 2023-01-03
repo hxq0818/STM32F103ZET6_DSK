@@ -65,3 +65,4 @@
 .\obj\main.o: .\hxq\drive\PWM\hxq_drv_pwm.h
 .\obj\main.o: .\hxq\drive\USART\hxq_drv_usart.h
 .\obj\main.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\main.o: .\hxq\drive\INPUT\hxq_drv_input.h
