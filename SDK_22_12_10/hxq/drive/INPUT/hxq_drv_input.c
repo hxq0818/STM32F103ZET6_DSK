@@ -49,12 +49,12 @@ void HAL_TIM_IC_MspInit(TIM_HandleTypeDef *htim)
 }
 
 
-//捕获状态
-//[7]:0,没有成功的捕获;1,成功捕获到一次.
-//[6]:0,还没捕获到低电平;1,已经捕获到低电平了.
-//[5:0]:捕获低电平后溢出的次数(对于32位定时器来说,1us计数器加1,溢出时间:4294秒)
-u8  TIM5_CH1_CAPTURE_STA=0;	//输入捕获状态		    				
-u32	TIM5_CH1_CAPTURE_VAL;	//输入捕获值(TIM2/TIM5是32位)
+////捕获状态
+////[7]:0,没有成功的捕获;1,成功捕获到一次.
+////[6]:0,还没捕获到低电平;1,已经捕获到低电平了.
+////[5:0]:捕获低电平后溢出的次数(对于32位定时器来说,1us计数器加1,溢出时间:4294秒)
+//u8  TIM5_CH1_CAPTURE_STA=0;	//输入捕获状态		    				
+//u32	TIM5_CH1_CAPTURE_VAL;	//输入捕获值(TIM2/TIM5是32位)
 
 
 //定时器5中断服务函数
@@ -64,24 +64,24 @@ void TIM5_IRQHandler(void)
 }
  
 
-//定时器更新中断（计数溢出）中断处理回调函数， 该函数在HAL_TIM_IRQHandler中会被调用
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)//更新中断（溢出）发生时执行
-{
-	
-	if((TIM5_CH1_CAPTURE_STA&0X80)==0)//还未成功捕获
-	{
-		if(TIM5_CH1_CAPTURE_STA&0X40)//已经捕获到高电平了
-		{
-			if((TIM5_CH1_CAPTURE_STA&0X3F)==0X3F)//高电平太长了
-			{
-				TIM5_CH1_CAPTURE_STA|=0X80;		//标记成功捕获了一次
-				TIM5_CH1_CAPTURE_VAL=0XFFFF;
-			}
-			else 
-				TIM5_CH1_CAPTURE_STA++;
-		}	 
-	}		
-}
+////定时器更新中断（计数溢出）中断处理回调函数， 该函数在HAL_TIM_IRQHandler中会被调用
+//void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)//更新中断（溢出）发生时执行
+//{
+//	
+//	if((TIM5_CH1_CAPTURE_STA&0X80)==0)//还未成功捕获
+//	{
+//		if(TIM5_CH1_CAPTURE_STA&0X40)//已经捕获到高电平了
+//		{
+//			if((TIM5_CH1_CAPTURE_STA&0X3F)==0X3F)//高电平太长了
+//			{
+//				TIM5_CH1_CAPTURE_STA|=0X80;		//标记成功捕获了一次
+//				TIM5_CH1_CAPTURE_VAL=0XFFFF;
+//			}
+//			else 
+//				TIM5_CH1_CAPTURE_STA++;
+//		}	 
+//	}		
+//}
 
 
 //定时器输入捕获中断处理回调函数，该函数在HAL_TIM_IRQHandler中会被调用

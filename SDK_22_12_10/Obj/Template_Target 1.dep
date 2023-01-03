@@ -3130,7 +3130,7 @@ I (.\hxq\drive\KEY\hxq_drv_key.h)(0x5EC4A592)
 I (.\Public\SysTick.h)(0x57BD4362)
 I (.\hxq\drive\LED\hxq_drv_led.h)(0x639598D2)
 I (.\hxq\drive\BEEP\hxq_drv_beep.h)(0x639598B6)
-F (.\hxq\drive\TIME\hxq_drv_time.c)(0x6399C3B9)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\CMSIS -I .\Libraries\STM32F1xx_HAL_Driver\Inc -I .\User -I .\Public -I .\APP\led -I .\hxq\drive\LED -I .\hxq\drive\BEEP -I .\hxq\drive\KEY -I .\hxq\drive\EXTI -I .\hxq\drive\TIME -I .\hxq\drive\PWM -I .\hxq\drive\USART -I .\hxq\drive\INPUT-I.\RTE\_Target_1-ID:\Installation_Path\Keil\Pack\Keil\STM32F1xx_DFP\1.0.5\Device\Include-ID:\Installation_Path\Keil\Core\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o .\obj\hxq_drv_time.o --omf_browse .\obj\hxq_drv_time.crf --depend .\obj\hxq_drv_time.d)
+F (.\hxq\drive\TIME\hxq_drv_time.c)(0x63B3F892)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\CMSIS -I .\Libraries\STM32F1xx_HAL_Driver\Inc -I .\User -I .\Public -I .\APP\led -I .\hxq\drive\LED -I .\hxq\drive\BEEP -I .\hxq\drive\KEY -I .\hxq\drive\EXTI -I .\hxq\drive\TIME -I .\hxq\drive\PWM -I .\hxq\drive\USART -I .\hxq\drive\INPUT-I.\RTE\_Target_1-ID:\Installation_Path\Keil\Pack\Keil\STM32F1xx_DFP\1.0.5\Device\Include-ID:\Installation_Path\Keil\Core\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o .\obj\hxq_drv_time.o --omf_browse .\obj\hxq_drv_time.crf --depend .\obj\hxq_drv_time.d)
 I (D:\Installation_Path\Keil\Core\ARM\ARMCC\include\time.h)(0x5CEB79D6)
 I (.\APP\led\led.h)(0x5EEDC7AC)
 I (.\Public\system.h)(0x639598C9)
@@ -3306,7 +3306,7 @@ I (.\Libraries\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x5D10A086)
 I (.\Libraries\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x5D10A086)
 I (.\Libraries\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_mmc.h)(0x5D10A078)
 I (D:\Installation_Path\Keil\Core\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
-F (.\hxq\drive\INPUT\hxq_drv_input.c)(0x63B3F4F2)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\CMSIS -I .\Libraries\STM32F1xx_HAL_Driver\Inc -I .\User -I .\Public -I .\APP\led -I .\hxq\drive\LED -I .\hxq\drive\BEEP -I .\hxq\drive\KEY -I .\hxq\drive\EXTI -I .\hxq\drive\TIME -I .\hxq\drive\PWM -I .\hxq\drive\USART -I .\hxq\drive\INPUT-I.\RTE\_Target_1-ID:\Installation_Path\Keil\Pack\Keil\STM32F1xx_DFP\1.0.5\Device\Include-ID:\Installation_Path\Keil\Core\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o .\obj\hxq_drv_input.o --omf_browse .\obj\hxq_drv_input.crf --depend .\obj\hxq_drv_input.d)
+F (.\hxq\drive\INPUT\hxq_drv_input.c)(0x63B3F8E0)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\CMSIS -I .\Libraries\STM32F1xx_HAL_Driver\Inc -I .\User -I .\Public -I .\APP\led -I .\hxq\drive\LED -I .\hxq\drive\BEEP -I .\hxq\drive\KEY -I .\hxq\drive\EXTI -I .\hxq\drive\TIME -I .\hxq\drive\PWM -I .\hxq\drive\USART -I .\hxq\drive\INPUT-I.\RTE\_Target_1-ID:\Installation_Path\Keil\Pack\Keil\STM32F1xx_DFP\1.0.5\Device\Include-ID:\Installation_Path\Keil\Core\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o .\obj\hxq_drv_input.o --omf_browse .\obj\hxq_drv_input.crf --depend .\obj\hxq_drv_input.d)
 I (hxq\drive\INPUT\hxq_drv_input.h)(0x63B3F50B)
 I (.\Public\system.h)(0x639598C9)
 I (.\User\stm32f1xx.h)(0x5D1623CC)
