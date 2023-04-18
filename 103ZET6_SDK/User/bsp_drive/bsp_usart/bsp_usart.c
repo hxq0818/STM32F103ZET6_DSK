@@ -4,24 +4,9 @@
  * @Author: xiaoqing.huang
  * @Date: 2023-04-11 20:26:09
  * @LastEditors: LAPTOP-4DIHEQ1Q
- * @LastEditTime: 2023-04-18 21:06:00
+ * @LastEditTime: 2023-04-18 21:11:57
  */
-/**
-  ******************************************************************************
-  * @file    bsp_usart.c
-  * @author  fire
-  * @version V1.0
-  * @date    2013-xx-xx
-  * @brief   重定向c库printf函数到usart端口
-  ******************************************************************************
-  * @attention
-  *
-  * 实验平台:野火STM32 F103-霸道 开发板  
-  * 论坛    :http://www.firebbs.cn
-  * 淘宝    :https://fire-stm32.taobao.com
-  *
-  ******************************************************************************
-  */ 
+
 	
 #include "bsp_usart.h"
 
