@@ -29,3 +29,13 @@
 .\objects\main.o: ..\Libraries\FWlib\inc\stm32f10x_wwdg.h
 .\objects\main.o: ..\Libraries\FWlib\inc\misc.h
 .\objects\main.o: ..\User\project_config\user_project_config.h
+.\objects\main.o: ..\User\bsp_drive\bsp_SysTick\bsp_SysTick.h
+.\objects\main.o: ..\User\bsp_drive\bsp_led\bsp_led.h
+.\objects\main.o: ..\User\bsp_drive\bsp_beep\bsp_beep.h
+.\objects\main.o: ..\User\bsp_drive\bsp_key\bsp_key.h
+.\objects\main.o: ..\User\bsp_drive\bsp_exti\bsp_exti.h
+.\objects\main.o: ..\User\bsp_drive\bsp_usart\bsp_usart.h
+.\objects\main.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: ..\User\bsp_drive\bsp_wwdg\bsp_wwdg.h
+.\objects\main.o: ..\User\user\log\log.h
+.\objects\main.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\string.h

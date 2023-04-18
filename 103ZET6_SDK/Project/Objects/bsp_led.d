@@ -30,3 +30,7 @@
 .\objects\bsp_led.o: ..\Libraries\FWlib\inc\stm32f10x_wwdg.h
 .\objects\bsp_led.o: ..\Libraries\FWlib\inc\misc.h
 .\objects\bsp_led.o: ..\User\project_config\user_project_config.h
+.\objects\bsp_led.o: ..\User\user\log\log.h
+.\objects\bsp_led.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\bsp_led.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\string.h
+.\objects\bsp_led.o: ..\User\bsp_drive\bsp_usart\bsp_usart.h

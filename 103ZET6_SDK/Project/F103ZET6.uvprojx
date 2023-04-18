@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\CMSIS;..\Libraries\FWlib\inc;..\User;..\User\project_config;..\User\bsp_drive\bsp_led</IncludePath>
+              <IncludePath>..\Libraries\CMSIS;..\Libraries\FWlib\inc;..\User;..\User\project_config;..\User\bsp_drive\bsp_led;..\User\bsp_drive\bsp_beep;..\User\bsp_drive\bsp_key;..\User\bsp_drive\bsp_SysTick;..\User\bsp_drive\bsp_exti;..\User\bsp_drive\bsp_usart;..\User\user\log;..\User\bsp_drive\bsp_wwdg</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -546,6 +546,46 @@
               <FileName>bsp_led.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\bsp_drive\bsp_led\bsp_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_beep.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_drive\bsp_beep\bsp_beep.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_drive\bsp_key\bsp_key.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_SysTick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_drive\bsp_SysTick\bsp_SysTick.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_drive\bsp_exti\bsp_exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_drive\bsp_usart\bsp_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_wwdg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_drive\bsp_wwdg\bsp_wwdg.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>user_module</GroupName>
+          <Files>
+            <File>
+              <FileName>log.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\user\log\log.c</FilePath>
             </File>
           </Files>
         </Group>
