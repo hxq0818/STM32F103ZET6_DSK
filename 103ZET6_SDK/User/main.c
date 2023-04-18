@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: xiaoqing.huang
+ * @Date: 2023-04-04 21:42:21
+ * @LastEditors: LAPTOP-4DIHEQ1Q
+ * @LastEditTime: 2023-04-18 21:05:27
+ */
 /**
   ******************************************************************************
   * @file    main.c
@@ -27,6 +35,8 @@
 #include "bsp_wwdg.h"
 #include "log.h"
 
+
+
 /**
   * @brief  ÷˜∫Ø ˝
   * @param  Œﬁ  
@@ -34,7 +44,7 @@
   */
 int main(void)
 {	
-	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
 	/* ≈‰÷√USART1 */
 	USART_Config();
 	/* ≈‰÷√LED0 LED1 */

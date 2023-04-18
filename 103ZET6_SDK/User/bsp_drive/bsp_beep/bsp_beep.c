@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: xiaoqing.huang
+ * @Date: 2023-04-05 20:52:52
+ * @LastEditors: LAPTOP-4DIHEQ1Q
+ * @LastEditTime: 2023-04-18 21:05:42
+ */
 /**
   ******************************************************************************
   * @file    bsp_beep.c

@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: xiaoqing.huang
+ * @Date: 2023-04-04 21:42:21
+ * @LastEditors: LAPTOP-4DIHEQ1Q
+ * @LastEditTime: 2023-04-18 21:05:33
+ */
 /**
   ******************************************************************************
   * @file    bsp_led.c
@@ -22,6 +30,7 @@
   * @param  нч
   * @retval нч
   */
+ 
 void LED_GPIO_Config(void)
 {		
 		DEBUG_LOG(HXQ_DEBUG_MODULE_LED_LVL,"%s %d\r\n",__func__,__LINE__);

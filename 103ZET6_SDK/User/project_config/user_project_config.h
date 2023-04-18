@@ -3,6 +3,8 @@
 
 
 #include "stm32f10x.h"
+#include "misc.h"
+#include "stm32f10x_gpio.h"
 
 /*  π”√log¥Ú”° */
 #define DEBUG_SUPPORT 1

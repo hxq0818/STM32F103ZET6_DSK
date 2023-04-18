@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: xiaoqing.huang
+ * @Date: 2023-04-05 20:53:00
+ * @LastEditors: 
+ * @LastEditTime: 2023-04-18 21:02:15
+ */
 #ifndef __BEEP_H
 #define	__BEEP_H
 

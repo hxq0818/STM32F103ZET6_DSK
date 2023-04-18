@@ -1,3 +1,6 @@
+vscode插件使用:
+设置->搜索(fileheader)->工作区->编辑.json文件
+
 GPIO寄存器描述 《STM32参考手册中文-p75》
 
 1、端口配置低寄存器(GPIOx_CRL)(x = A...E)

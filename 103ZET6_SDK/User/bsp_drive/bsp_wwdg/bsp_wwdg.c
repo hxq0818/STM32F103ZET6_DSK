@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: xiaoqing.huang
+ * @Date: 2023-04-17 20:30:24
+ * @LastEditors: LAPTOP-4DIHEQ1Q
+ * @LastEditTime: 2023-04-18 21:06:09
+ */
 #include "bsp_wwdg.h"
 
 #include "log.h"

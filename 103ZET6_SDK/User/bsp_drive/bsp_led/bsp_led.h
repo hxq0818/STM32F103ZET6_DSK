@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: xiaoqing.huang
+ * @Date: 2023-04-04 21:42:21
+ * @LastEditors: 
+ * @LastEditTime: 2023-04-18 21:01:37
+ */
 #ifndef __LED_H
 #define	__LED_H
 
@@ -6,7 +14,7 @@
 
 #include "user_project_config.h"
 
-/* 定义LED连接的GPIO端口, 用户只需要修改下面的代码即可改变控制的LED引脚 */
+/* 定义LED连接的GPIO端口, 用户只需要修改下面的代码即可改变控制的蜂鸣器引脚 */
 // LED1
 #ifndef LED1_FUNCTION_SUPPROT
 #define LED1_FUNCTION_SUPPORT 1
@@ -19,21 +27,15 @@
 // LED0
 #ifndef LED0_FUNCTION_SUPPORT
 #define LED0_FUNCTION_SUPPROT 1
-#define LED0_GPIO_PORT    	GPIOB			              /* GPIO端口 */
+#define LED0_GPIO_PORT    	GPIOB			             /* GPIO端口 */
 #define LED0_GPIO_CLK 	    RCC_APB2Periph_GPIOB		/* GPIO端口时钟 */
 #define LED0_GPIO_PIN				GPIO_Pin_5			        /* 连接到SCL时钟线的GPIO */
 #endif
 
 
 
-///** the macro definition to trigger the led on or off 
-//  * 1 - off
-//  *0 - on
-//  */
-//#define ON  0
-//#define OFF 1
 
-/* 使用标准的固件库控制IO*/
+/* 带参宏，可以像内联函数一样使用 */
 #define LED0(a)	if (a)	\
 					GPIO_SetBits(LED0_GPIO_PORT,LED0_GPIO_PIN);\
 					else		\
@@ -45,21 +47,6 @@
 					GPIO_ResetBits(LED1_GPIO_PORT,LED1_GPIO_PIN)
 
 
-
-/* 直接操作寄存器的方法控制IO */
-#define	digitalHi(p,i)		 {p->BSRR=i;}	 //输出为高电平		
-#define digitalLo(p,i)		 {p->BRR=i;}	 //输出低电平
-#define digitalToggle(p,i) {p->ODR ^=i;} //输出反转状态
-
-
-/* 定义控制IO的宏 */
-#define LED1_TOGGLE		 digitalToggle(LED1_GPIO_PORT,LED1_GPIO_PIN)
-#define LED1_OFF		   digitalHi(LED1_GPIO_PORT,LED1_GPIO_PIN)
-#define LED1_ON			   digitalLo(LED1_GPIO_PORT,LED1_GPIO_PIN)
-
-#define LED0_TOGGLE		 digitalToggle(LED0_GPIO_PORT,LED0_GPIO_PIN)
-#define LED0_OFF		   digitalHi(LED0_GPIO_PORT,LED0_GPIO_PIN)
-#define LED0_ON			   digitalLo(LED0_GPIO_PORT,LED0_GPIO_PIN)
 
 
 

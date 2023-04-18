@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: xiaoqing.huang
+ * @Date: 2023-04-11 20:26:09
+ * @LastEditors: LAPTOP-4DIHEQ1Q
+ * @LastEditTime: 2023-04-18 21:06:00
+ */
 /**
   ******************************************************************************
   * @file    bsp_usart.c

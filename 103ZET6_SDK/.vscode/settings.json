@@ -1,0 +1,55 @@
+{
+  "C_Cpp_Runner.cCompilerPath": "gcc",
+  "C_Cpp_Runner.cppCompilerPath": "g++",
+  "C_Cpp_Runner.debuggerPath": "gdb",
+  "C_Cpp_Runner.cStandard": "",
+  "C_Cpp_Runner.cppStandard": "",
+  "C_Cpp_Runner.msvcBatchPath": "",
+  "C_Cpp_Runner.useMsvc": false,
+  "C_Cpp_Runner.warnings": [
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-Wshadow",
+    "-Wformat=2",
+    "-Wconversion",
+    "-Wnull-dereference",
+    "-Wsign-conversion"
+  ],
+  "C_Cpp_Runner.enableWarnings": true,
+  "C_Cpp_Runner.warningsAsError": false,
+  "C_Cpp_Runner.compilerArgs": [],
+  "C_Cpp_Runner.linkerArgs": [],
+  "C_Cpp_Runner.includePaths": [
+    "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\Libraries\\CMSIS",
+    "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\Libraries\\FWlib\\inc",
+    "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User",
+    "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\project_config",
+    "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_led",
+    "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_beep",
+    "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_key",
+    "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_SysTick",
+    "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_exti",
+    "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_usart",
+    "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\user\\log",
+    "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_wwdg",
+    "D:\\Installation_Path\\Keil\\Core\\ARM\\ARMCC\\include",
+    "D:\\Installation_Path\\Keil\\Core\\ARM\\ARMCC\\include\\rw",
+    "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\Libraries\\CMSIS\\startup",
+    "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\Libraries\\FWlib\\src",
+    "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\Doc"
+  ],
+  "C_Cpp_Runner.includeSearch": [
+    "*",
+    "**/*"
+  ],
+  "C_Cpp_Runner.excludeSearch": [
+    "**/build",
+    "**/build/**",
+    "**/.*",
+    "**/.*/**",
+    "**/.vscode",
+    "**/.vscode/**"
+  ],
+  "C_Cpp_Runner.useAddressSanitizer": false
+}
