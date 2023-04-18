@@ -8,8 +8,8 @@
 
 /* 定义LED连接的GPIO端口, 用户只需要修改下面的代码即可改变控制的LED引脚 */
 // LED1
-#ifndef LED0_FUNCTION_SUPPORT
-#define LED0_FUNCTION_SUPPORT 1
+#ifndef LED1_FUNCTION_SUPPROT
+#define LED1_FUNCTION_SUPPORT 1
 #define LED1_GPIO_PORT    	GPIOE			              /* GPIO端口 */
 #define LED1_GPIO_CLK 	    RCC_APB2Periph_GPIOE		/* GPIO端口时钟 */
 #define LED1_GPIO_PIN				GPIO_Pin_5			        /* 连接到SCL时钟线的GPIO */
@@ -17,8 +17,8 @@
 
 
 // LED0
-#ifndef LED1_FUNCTION_SUPPROT
-#define LED1_FUNCTION_SUPPROT 1
+#ifndef LED0_FUNCTION_SUPPORT
+#define LED0_FUNCTION_SUPPROT 1
 #define LED0_GPIO_PORT    	GPIOB			              /* GPIO端口 */
 #define LED0_GPIO_CLK 	    RCC_APB2Periph_GPIOB		/* GPIO端口时钟 */
 #define LED0_GPIO_PIN				GPIO_Pin_5			        /* 连接到SCL时钟线的GPIO */
@@ -26,23 +26,23 @@
 
 
 
-/** the macro definition to trigger the led on or off 
-  * 1 - off
-  *0 - on
-  */
-#define ON  0
-#define OFF 1
+///** the macro definition to trigger the led on or off 
+//  * 1 - off
+//  *0 - on
+//  */
+//#define ON  0
+//#define OFF 1
 
 /* 使用标准的固件库控制IO*/
-#define LED1(a)	if (a)	\
-					GPIO_SetBits(LED1_GPIO_PORT,LED1_GPIO_PIN);\
-					else		\
-					GPIO_ResetBits(LED1_GPIO_PORT,LED1_GPIO_PIN)
-
 #define LED0(a)	if (a)	\
 					GPIO_SetBits(LED0_GPIO_PORT,LED0_GPIO_PIN);\
 					else		\
 					GPIO_ResetBits(LED0_GPIO_PORT,LED0_GPIO_PIN)
+
+#define LED1(a)	if (a)	\
+					GPIO_SetBits(LED1_GPIO_PORT,LED1_GPIO_PIN);\
+					else		\
+					GPIO_ResetBits(LED1_GPIO_PORT,LED1_GPIO_PIN)
 
 
 
@@ -57,9 +57,9 @@
 #define LED1_OFF		   digitalHi(LED1_GPIO_PORT,LED1_GPIO_PIN)
 #define LED1_ON			   digitalLo(LED1_GPIO_PORT,LED1_GPIO_PIN)
 
-#define LED0_TOGGLE		 digitalToggle(LED2_GPIO_PORT,LED2_GPIO_PIN)
-#define LED0_OFF		   digitalHi(LED2_GPIO_PORT,LED2_GPIO_PIN)
-#define LED0_ON			   digitalLo(LED2_GPIO_PORT,LED2_GPIO_PIN)
+#define LED0_TOGGLE		 digitalToggle(LED0_GPIO_PORT,LED0_GPIO_PIN)
+#define LED0_OFF		   digitalHi(LED0_GPIO_PORT,LED0_GPIO_PIN)
+#define LED0_ON			   digitalLo(LED0_GPIO_PORT,LED0_GPIO_PIN)
 
 
 

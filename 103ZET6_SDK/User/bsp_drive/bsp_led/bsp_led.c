@@ -16,7 +16,7 @@
   */
   
 #include "bsp_led.h"   
-
+#include "log.h"
  /**
   * @brief  初始化控制LED的IO
   * @param  无
@@ -24,6 +24,7 @@
   */
 void LED_GPIO_Config(void)
 {		
+		DEBUG_LOG(HXQ_DEBUG_MODULE_LED_LVL,"%s %d\r\n",__func__,__LINE__);
 		/*定义一个GPIO_InitTypeDef类型的结构体*/
 		GPIO_InitTypeDef GPIO_InitStructure;
 
