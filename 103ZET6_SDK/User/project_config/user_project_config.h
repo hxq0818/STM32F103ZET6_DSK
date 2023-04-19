@@ -1,3 +1,11 @@
+/*
+ * @brief: 用户项目功能配置文件
+ * @Author: xiaoqing.huang
+ * @version: V1.0
+ * @Date: 2023-04-04 21:42:21
+ * @LastEditors: LAPTOP-4DIHEQ1Q
+ * @LastEditTime: 2023-04-19 21:11:09
+ */
 #ifndef __USER_PROJECT_CONFIG_H
 #define	__USER_PROJECT_CONFIG_H
 
@@ -8,7 +16,15 @@
 
 /* 使用log打印 */
 #define DEBUG_SUPPORT 1
-
+/* 定时器功能 */
+#define TIME1_FUNCTION_SUPPORT 0
+#define TIME2_FUNCTION_SUPPORT 0
+#define TIME3_FUNCTION_SUPPORT 0
+#define TIME4_FUNCTION_SUPPORT 0
+#define TIME5_FUNCTION_SUPPORT 0
+#define TIME6_FUNCTION_SUPPORT 1
+#define TIME7_FUNCTION_SUPPORT 1
+#define TIME8_FUNCTION_SUPPORT 0
 
 /* 高低电平 */
 #define HIGH_LEVEL  	1			/* 高电平*/
@@ -116,5 +132,58 @@
 #endif
 /******** 定义板载按键中断 *********/
 
+/* 定义板载定时器*/
+#if TIME1_FUNCTION_SUPPORT
+
+#else 
+#endif
+
+#if TIME2_FUNCTION_SUPPORT
+
+#else 
+#endif
+
+#if TIME3_FUNCTION_SUPPORT
+
+#else 
+#endif
+
+#if TIME4_FUNCTION_SUPPORT
+
+#else 
+#endif
+
+#if TIME5_FUNCTION_SUPPORT
+
+#else 
+#endif
+
+#if TIME6_FUNCTION_SUPPORT
+#define  TIME6_BASIC_TIM                   TIM6
+#define  TIME6_BASIC_TIM_APBxClock_FUN     RCC_APB1PeriphClockCmd
+#define  TIME6_BASIC_TIM_CLK               RCC_APB1Periph_TIM6
+#define  TIME6_BASIC_TIM_Period            (1000-1)
+#define  TIME6_BASIC_TIM_Prescaler         71
+#define  TIME6_BASIC_TIM_IRQ               TIM6_IRQn
+#define  TIME6_BASIC_TIM_IRQHandler        TIM6_IRQHandler
+#else 
+#endif
+
+#if TIME7_FUNCTION_SUPPORT
+#define  TIME7_BASIC_TIM                   TIM7
+#define  TIME7_BASIC_TIM_APBxClock_FUN     RCC_APB1PeriphClockCmd
+#define  TIME7_BASIC_TIM_CLK               RCC_APB1Periph_TIM7
+#define  TIME7_BASIC_TIM_Period            1000-1
+#define  TIME7_BASIC_TIM_Prescaler         71
+#define  TIME7_BASIC_TIM_IRQ               TIM7_IRQn
+#define  TIME7_BASIC_TIM_IRQHandler        TIM7_IRQHandler
+#else 
+#endif
+
+#if TIME8_FUNCTION_SUPPORT
+
+#else 
+#endif
+/* 定义板载定时器*/
 
 #endif /* __USER_PROJECT_CONFIG_H */

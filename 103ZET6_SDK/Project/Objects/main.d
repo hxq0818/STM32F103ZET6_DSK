@@ -37,5 +37,6 @@
 .\objects\main.o: ..\User\bsp_drive\bsp_usart\bsp_usart.h
 .\objects\main.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: ..\User\bsp_drive\bsp_wwdg\bsp_wwdg.h
+.\objects\main.o: ..\User\bsp_drive\bsp_time\bsp_time.h
 .\objects\main.o: ..\User\user\log\log.h
 .\objects\main.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\string.h

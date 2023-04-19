@@ -16,8 +16,8 @@
   * @param  无
   * @retval 无
   */
-void Key_GPIO_Config(void)
-{
+//void Key_GPIO_Config(void)
+//{
 	// GPIO_InitTypeDef GPIO_InitStructure;
 	
 	// /*开启按键端口的时钟*/
@@ -36,7 +36,7 @@ void Key_GPIO_Config(void)
 	// GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; 
 	// //使用结构体初始化按键
 	// GPIO_Init(KEY2_GPIO_PORT, &GPIO_InitStructure);	
-}
+//}
 
  /*
  * 函数名：Key_Scan
@@ -45,8 +45,8 @@ void Key_GPIO_Config(void)
  *		     GPIO_Pin：待读取的端口位 	
  * 输出  ：KEY_OFF(没按下按键)、KEY_ON（按下按键）
  */
-uint8_t Key_Scan(GPIO_TypeDef* GPIOx,uint16_t GPIO_Pin)
-{			
+//uint8_t Key_Scan(GPIO_TypeDef* GPIOx,uint16_t GPIO_Pin)
+//{			
 	// /*检测是否有按键按下 */
 	// if(GPIO_ReadInputDataBit(GPIOx,GPIO_Pin) == KEY_ON )  
 	// {	 
@@ -56,7 +56,7 @@ uint8_t Key_Scan(GPIO_TypeDef* GPIOx,uint16_t GPIO_Pin)
 	// }
 	// else
 	// 	return KEY_OFF;
-}
+//}
 
 /*******************************************************************************
 * 函 数 名         : KEY_Scan
@@ -69,8 +69,8 @@ uint8_t Key_Scan(GPIO_TypeDef* GPIOx,uint16_t GPIO_Pin)
 					 KEY1_PRESS：KEY1键按下
 					 KEY2_PRESS：KEY2键按下
 *******************************************************************************/
-u8 KEY_Scan(u8 mode)
-{
+//u8 KEY_Scan(u8 mode)
+//{
 // 	static u8 key=1;
 	
 // 	if(mode==1) //连续按键按下
@@ -91,6 +91,6 @@ u8 KEY_Scan(u8 mode)
 // 	else if(KEY_UP==0&&KEY0==1&&KEY1==1&&KEY2==1)    //无按键按下
 // 		key=1;
 // 	return 0;
-}
+//}
 
 /*********************************************END OF FILE**********************/

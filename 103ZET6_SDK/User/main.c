@@ -4,7 +4,7 @@
  * @Author: xiaoqing.huang
  * @Date: 2023-04-04 21:42:21
  * @LastEditors: LAPTOP-4DIHEQ1Q
- * @LastEditTime: 2023-04-19 20:11:02
+ * @LastEditTime: 2023-04-19 21:26:27
  */
 
 #include "stm32f10x.h"
@@ -17,8 +17,8 @@
 #include "bsp_exti.h"
 #include "bsp_usart.h"
 #include "bsp_wwdg.h"
+#include "bsp_time.h"
 #include "log.h"
-
 
 
 /**
@@ -43,17 +43,29 @@ int main(void)
 //	Usart_SendString( DEBUG_USARTx,"这是一个串口中断接收回显实验\n");
 //	printf("欢迎使用野火STM32开发板\n\n\n\n");
 	WWDG_Init();
+	BASIC_TIM_Init();
 	DEBUG_LOG(HXQ_DEBUG_MODULE_SYSTEM_LVL,"START!!!\r\n");
 	while(1)
 	{
-
-		LED0( 1 ); 
-	    Delay_us(100000);    	// 100000 * 10us = 1000ms
-		LED0( 0 );
-	    Delay_us(100000);		// 100000 * 10us = 1000ms
-	
-	}  
-
+		if ( time == 1000 ) /* 1000 * 1 ms = 1s 时间到 */
+		{
+				time = 0;     
+				LED0(0); 
+		}
+		if(time == 500)
+		{
+			LED0(1); 
+		}
+		if ( time7 == 1000 ) /* 1000 * 1 ms = 1s 时间到 */
+		{
+				time7 = 0;     
+				LED1(0); 
+		}
+		if(time7 == 500)
+		{
+			LED1(1); 
+		}
+	}
 }
 
 /*********************************************END OF FILE**********************/

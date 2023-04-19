@@ -15,6 +15,7 @@
                 "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_usart",
                 "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\user\\log",
                 "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_wwdg",
+                "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_time",
                 "D:\\Installation_Path\\Keil\\Core\\ARM\\ARMCC\\include",
                 "D:\\Installation_Path\\Keil\\Core\\ARM\\ARMCC\\include\\rw",
                 "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\Libraries\\CMSIS\\startup",
