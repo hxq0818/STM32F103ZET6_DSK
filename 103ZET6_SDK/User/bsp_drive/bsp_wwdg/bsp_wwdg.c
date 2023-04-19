@@ -1,11 +1,12 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @brief: 窗口看门狗应用
+ * @version: V1.0
  * @Author: xiaoqing.huang
  * @Date: 2023-04-17 20:30:24
  * @LastEditors: LAPTOP-4DIHEQ1Q
- * @LastEditTime: 2023-04-18 21:06:09
+ * @LastEditTime: 2023-04-19 20:02:52
  */
+
 #include "bsp_wwdg.h"
 
 #include "log.h"

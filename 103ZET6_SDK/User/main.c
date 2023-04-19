@@ -1,28 +1,12 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @brief: 
+ * @version: V1.0
  * @Author: xiaoqing.huang
  * @Date: 2023-04-04 21:42:21
  * @LastEditors: LAPTOP-4DIHEQ1Q
- * @LastEditTime: 2023-04-18 21:05:27
+ * @LastEditTime: 2023-04-19 20:11:02
  */
-/**
-  ******************************************************************************
-  * @file    main.c
-  * @author  fire
-  * @version V1.0
-  * @date    2013-xx-xx
-  * @brief   测试led
-  ******************************************************************************
-  * @attention
-  *
-  * 实验平台:野火 F103-指南者 STM32 开发板 
-  * 论坛    :http://www.firebbs.cn
-  * 淘宝    :https://fire-stm32.taobao.com
-  *
-  ******************************************************************************
-  */ 
-	
+
 #include "stm32f10x.h"
 #include "user_project_config.h"
 

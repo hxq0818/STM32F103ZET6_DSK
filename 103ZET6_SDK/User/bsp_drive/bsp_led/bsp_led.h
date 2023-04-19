@@ -1,11 +1,12 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @brief: led应用函数接口
+ * @version: V1.0
  * @Author: xiaoqing.huang
  * @Date: 2023-04-04 21:42:21
- * @LastEditors: 
- * @LastEditTime: 2023-04-18 21:01:37
+ * @LastEditors: LAPTOP-4DIHEQ1Q
+ * @LastEditTime: 2023-04-19 20:10:07
  */
+  
 #ifndef __LED_H
 #define	__LED_H
 

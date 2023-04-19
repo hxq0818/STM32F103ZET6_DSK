@@ -1,28 +1,12 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @brief: 设置按键中断应用
+ * @version: V1.0
  * @Author: xiaoqing.huang
  * @Date: 2023-04-07 11:50:44
- * @LastEditors: 
- * @LastEditTime: 2023-04-18 21:05:56
+ * @LastEditors: LAPTOP-4DIHEQ1Q
+ * @LastEditTime: 2023-04-19 20:01:58
  */
-/**
-  ******************************************************************************
-  * @file    bsp_exti.c
-  * @author  fire
-  * @version V1.0
-  * @date    2013-xx-xx
-  * @brief   I/O线中断应用bsp
-  ******************************************************************************
-  * @attention
-  *
-  * 实验平台:野火 F103-霸道 STM32 开发板 
-  * 论坛    :http://www.firebbs.cn
-  * 淘宝    :https://fire-stm32.taobao.com
-  *
-  ******************************************************************************
-  */
-  
+
 #include "bsp_exti.h"
 #include "bsp_key.h"
 #include "bsp_beep.h"

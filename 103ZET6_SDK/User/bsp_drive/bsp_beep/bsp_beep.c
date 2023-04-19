@@ -1,27 +1,11 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @brief: 蜂鸣器应用函数接口
+ * @version: V1.0
  * @Author: xiaoqing.huang
  * @Date: 2023-04-05 20:52:52
  * @LastEditors: LAPTOP-4DIHEQ1Q
- * @LastEditTime: 2023-04-18 21:05:42
+ * @LastEditTime: 2023-04-19 19:59:43
  */
-/**
-  ******************************************************************************
-  * @file    bsp_beep.c
-  * @author  fire
-  * @version V3.0
-  * @date    2015-xx-xx
-  * @brief   蜂鸣器应用函数接口
-  ******************************************************************************
-  * @attention
-  *
-  * 实验平台:野火 霸道 STM32 开发板 
-  * 论坛    :http://www.firebbs.cn
-  * 淘宝    :http://fire-stm32.taobao.com
-  *
-  ******************************************************************************
-  */
   
 #include "bsp_beep.h"   
 

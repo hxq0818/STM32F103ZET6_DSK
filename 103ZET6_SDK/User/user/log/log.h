@@ -1,18 +1,12 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @brief:  各个模块的log控制
+ * @version: V1.0
  * @Author: xiaoqing.huang
  * @Date: 2023-04-16 20:40:24
- * @LastEditors: 
- * @LastEditTime: 2023-04-18 21:04:41
+ * @LastEditors: LAPTOP-4DIHEQ1Q
+ * @LastEditTime: 2023-04-19 20:03:47
  */
-/**************
-*  @File name : LOG.h
-*  @Author  : xiaoqing.huang
-*  @Version : 1.0
-*  @Date : 2023-01-12
-*  @Description ： 各个模块的log控制
-***************/
+
 #ifndef _LOG_H_
 #define _LOG_H_
 

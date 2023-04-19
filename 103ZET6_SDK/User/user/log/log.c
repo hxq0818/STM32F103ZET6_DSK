@@ -1,11 +1,12 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @brief: 串口usart1打印应用
+ * @version: V1.0
  * @Author: xiaoqing.huang
  * @Date: 2023-04-16 20:40:15
  * @LastEditors: LAPTOP-4DIHEQ1Q
- * @LastEditTime: 2023-04-18 21:12:42
+ * @LastEditTime: 2023-04-19 20:03:21
  */
+
 #include "log.h"
 
 #if DEBUG_SUPPORT

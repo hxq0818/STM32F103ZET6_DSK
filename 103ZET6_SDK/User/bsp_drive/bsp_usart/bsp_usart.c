@@ -1,13 +1,12 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @brief: usart´®¿ÚÓ¦ÓÃ
+ * @version: V1.0
  * @Author: xiaoqing.huang
  * @Date: 2023-04-11 20:26:09
  * @LastEditors: LAPTOP-4DIHEQ1Q
- * @LastEditTime: 2023-04-18 21:11:57
+ * @LastEditTime: 2023-04-19 20:02:29
  */
 
-	
 #include "bsp_usart.h"
 
  /**

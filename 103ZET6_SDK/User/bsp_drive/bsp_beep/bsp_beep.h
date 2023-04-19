@@ -1,11 +1,12 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @brief: 蜂鸣器应用函数接口
+ * @version: V1.0
  * @Author: xiaoqing.huang
- * @Date: 2023-04-05 20:53:00
- * @LastEditors: 
- * @LastEditTime: 2023-04-18 21:02:15
+ * @Date: 2023-04-05 20:52:52
+ * @LastEditors: LAPTOP-4DIHEQ1Q
+ * @LastEditTime: 2023-04-19 20:10:00
  */
+  
 #ifndef __BEEP_H
 #define	__BEEP_H
 

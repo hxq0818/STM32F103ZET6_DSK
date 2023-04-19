@@ -1,11 +1,12 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @brief: 按键应用bsp（扫描模式）(未使用)
+ * @version: V1.0
  * @Author: xiaoqing.huang
- * @Date: 2023-04-06 19:46:24
- * @LastEditors: 
- * @LastEditTime: 2023-04-18 21:02:39
+ * @Date: 2023-04-06 19:46:17
+ * @LastEditors: LAPTOP-4DIHEQ1Q
+ * @LastEditTime: 2023-04-19 20:09:52
  */
+
 #ifndef __KEY_H
 #define	__KEY_H
 
