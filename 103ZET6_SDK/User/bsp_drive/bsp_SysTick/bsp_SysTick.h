@@ -1,5 +1,5 @@
 /*
- * @brief: ?????????
+ * @brief: 系统嘀嗒计时器功能
  * @version: V1.0
  * @Author: xiaoqing.huang
  * @Date: 2023-04-06 20:43:22
@@ -14,7 +14,7 @@
 
 void SysTick_Init(void);
 void Delay_us(__IO u32 nTime);
-#define Delay_ms(x) Delay_us(100*x)	 //单位ms
+#define Delay_ms(x) Delay_us(1000*x)	 //单位ms
 
 void SysTick_Delay_Us( __IO uint32_t us);
 void SysTick_Delay_Ms( __IO uint32_t ms);

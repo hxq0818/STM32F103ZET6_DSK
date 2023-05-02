@@ -38,5 +38,8 @@
 .\objects\main.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: ..\User\bsp_drive\bsp_wwdg\bsp_wwdg.h
 .\objects\main.o: ..\User\bsp_drive\bsp_time\bsp_time.h
+.\objects\main.o: ..\User\bsp_drive\bsp_adc\bsp_adc.h
+.\objects\main.o: ..\User\bsp_drive\bsp_rtc\bsp_rtc.h
+.\objects\main.o: ..\User\bsp_drive\bsp_ds18b20\bsp_ds18b20.h
 .\objects\main.o: ..\User\user\log\log.h
 .\objects\main.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\string.h

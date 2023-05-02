@@ -21,11 +21,15 @@
 
 #if DEBUG_SUPPORT
 
-#define HXQ_DEBUG_MODULE_SYSTEM_LVL           			1
-#define HXQ_DEBUG_MODULE_KEY_LVL       							2
-#define HXQ_DEBUG_MODULE_LED_LVL       							3
-#define HXQ_DEBUG_MODULE_BEEP_LVL       						4
-#define HXQ_DEBUG_MODULE_WWDG_LVL       						5
+#define HXQ_DEBUG_MODULE_SYSTEM_LVL           			0		//1
+#define HXQ_DEBUG_MODULE_KEY_LVL       							0		//2
+#define HXQ_DEBUG_MODULE_LED_LVL       							0		//3
+#define HXQ_DEBUG_MODULE_BEEP_LVL       						0		//4
+#define HXQ_DEBUG_MODULE_WWDG_LVL       						0		//5
+#define HXQ_DEBUG_MODULE_TIM_LVL       							0  	//6
+#define HXQ_DEBUG_MODULE_ADC_LVL       							0 	//7
+#define HXQ_DEBUG_MODULE_TEP_LVL										8		//8
+#define HXQ_DEBUG_MODULE_RTC_LVL										0		//9
 
 #define HXQ_LOG_MAX_BUFF_SIZE 258
 extern unsigned char hxq_log_buff[HXQ_LOG_MAX_BUFF_SIZE];

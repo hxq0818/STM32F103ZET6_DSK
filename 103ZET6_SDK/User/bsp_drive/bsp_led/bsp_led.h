@@ -4,7 +4,7 @@
  * @Author: xiaoqing.huang
  * @Date: 2023-04-04 21:42:21
  * @LastEditors: LAPTOP-4DIHEQ1Q
- * @LastEditTime: 2023-04-19 20:10:07
+ * @LastEditTime: 2023-04-21 10:44:49
  */
   
 #ifndef __LED_H
@@ -14,25 +14,6 @@
 #include "stm32f10x.h"
 
 #include "user_project_config.h"
-
-/* 定义LED连接的GPIO端口, 用户只需要修改下面的代码即可改变控制的蜂鸣器引脚 */
-// LED1
-#ifndef LED1_FUNCTION_SUPPROT
-#define LED1_FUNCTION_SUPPORT 1
-#define LED1_GPIO_PORT    	GPIOE			              /* GPIO端口 */
-#define LED1_GPIO_CLK 	    RCC_APB2Periph_GPIOE		/* GPIO端口时钟 */
-#define LED1_GPIO_PIN				GPIO_Pin_5			        /* 连接到SCL时钟线的GPIO */
-#endif
-
-
-// LED0
-#ifndef LED0_FUNCTION_SUPPORT
-#define LED0_FUNCTION_SUPPROT 1
-#define LED0_GPIO_PORT    	GPIOB			             /* GPIO端口 */
-#define LED0_GPIO_CLK 	    RCC_APB2Periph_GPIOB		/* GPIO端口时钟 */
-#define LED0_GPIO_PIN				GPIO_Pin_5			        /* 连接到SCL时钟线的GPIO */
-#endif
-
 
 
 

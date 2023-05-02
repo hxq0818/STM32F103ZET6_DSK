@@ -4,7 +4,7 @@
  * @Author: xiaoqing.huang
  * @Date: 2023-04-06 20:43:22
  * @LastEditors: LAPTOP-4DIHEQ1Q
- * @LastEditTime: 2023-04-19 20:01:22
+ * @LastEditTime: 2023-04-21 10:31:54
  */
 
 #include "bsp_SysTick.h"
@@ -28,7 +28,7 @@ void SysTick_Init(void)
 	 * SystemFrequency / 1000000 1us中断一次
 	 */
 //	if (SysTick_Config(SystemFrequency / 100000))	// ST3.0.0库版本
-	if (SysTick_Config(SystemCoreClock / 100000))	// ST3.5.0库版本
+	if (SysTick_Config(SystemCoreClock / 1000000))	// ST3.5.0库版本
 	{ 
 		/* Capture error */ 
 		while (1);

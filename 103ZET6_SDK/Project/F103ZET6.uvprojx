@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\CMSIS;..\Libraries\FWlib\inc;..\User;..\User\project_config;..\User\bsp_drive\bsp_led;..\User\bsp_drive\bsp_beep;..\User\bsp_drive\bsp_key;..\User\bsp_drive\bsp_SysTick;..\User\bsp_drive\bsp_exti;..\User\bsp_drive\bsp_usart;..\User\user\log;..\User\bsp_drive\bsp_wwdg;..\User\bsp_drive\bsp_time</IncludePath>
+              <IncludePath>..\Libraries\CMSIS;..\Libraries\FWlib\inc;..\User;..\User\project_config;..\User\bsp_drive\bsp_led;..\User\bsp_drive\bsp_beep;..\User\bsp_drive\bsp_key;..\User\bsp_drive\bsp_SysTick;..\User\bsp_drive\bsp_exti;..\User\bsp_drive\bsp_usart;..\User\user\log;..\User\bsp_drive\bsp_wwdg;..\User\bsp_drive\bsp_time;..\User\bsp_drive\bsp_adc;..\User\bsp_drive\bsp_rtc;..\User\bsp_drive\bsp_ds18b20</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -581,6 +581,21 @@
               <FileName>bsp_time.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\bsp_drive\bsp_time\bsp_time.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_drive\bsp_adc\bsp_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_drive\bsp_rtc\bsp_rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_ds18b20.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_drive\bsp_ds18b20\bsp_ds18b20.c</FilePath>
             </File>
           </Files>
         </Group>

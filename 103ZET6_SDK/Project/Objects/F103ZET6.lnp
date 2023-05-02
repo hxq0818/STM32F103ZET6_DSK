@@ -35,6 +35,9 @@
 ".\objects\bsp_usart.o"
 ".\objects\bsp_wwdg.o"
 ".\objects\bsp_time.o"
+".\objects\bsp_adc.o"
+".\objects\bsp_rtc.o"
+".\objects\bsp_ds18b20.o"
 ".\objects\log.o"
 --library_type=microlib --strict --scatter ".\Objects\F103ZET6.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

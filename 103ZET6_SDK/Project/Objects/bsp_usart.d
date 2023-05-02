@@ -30,3 +30,4 @@
 .\objects\bsp_usart.o: ..\Libraries\FWlib\inc\stm32f10x_wwdg.h
 .\objects\bsp_usart.o: ..\Libraries\FWlib\inc\misc.h
 .\objects\bsp_usart.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\bsp_usart.o: ..\User\project_config\user_project_config.h

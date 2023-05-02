@@ -31,6 +31,6 @@
 .\objects\bsp_systick.o: ..\Libraries\FWlib\inc\misc.h
 .\objects\bsp_systick.o: ..\User\bsp_drive\bsp_usart\bsp_usart.h
 .\objects\bsp_systick.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\bsp_systick.o: ..\User\project_config\user_project_config.h
 .\objects\bsp_systick.o: ..\User\user\log\log.h
 .\objects\bsp_systick.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\string.h
-.\objects\bsp_systick.o: ..\User\project_config\user_project_config.h
