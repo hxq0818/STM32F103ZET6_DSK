@@ -4,7 +4,7 @@
  * @version: V1.0
  * @Date: 2023-04-19 20:54:33
  * @LastEditors: LAPTOP-4DIHEQ1Q
- * @LastEditTime: 2023-04-25 19:50:42
+ * @LastEditTime: 2023-05-02 23:22:35
  */
 
 // 基本定时器TIMx,x[6,7]定时初始化函数
@@ -14,6 +14,7 @@
 #include "bsp_led.h"
 #include "bsp_adc.h"
 #include "bsp_ds18b20.h"
+#include "malloc.h"
 
 #include "log.h"
 volatile uint32_t time6 = 0; // ms 计时变量 
@@ -165,7 +166,8 @@ void TIM7_Init(void)
 	// 使能计数器
     TIM_Cmd(TIME7_BASIC_TIM, ENABLE);	
 }
-
+	u8 *p=0;
+	u8 sramx=1;	//默认为内部sram
 void  TIME7_BASIC_TIM_IRQHandler (void)
 {
 	if ( TIM_GetITStatus( TIME7_BASIC_TIM, TIM_IT_Update) != RESET ) 
@@ -182,11 +184,21 @@ void  TIME7_BASIC_TIM_IRQHandler (void)
 			DEBUG_LOG(HXQ_DEBUG_MODULE_ADC_LVL,"tep:%d\r\n",Get_Temperture());
 			DEBUG_LOG(HXQ_DEBUG_MODULE_ADC_LVL,"lsens_value:%d\r\n",Lsens_Get_Val());
 			DEBUG_LOG(HXQ_DEBUG_MODULE_TEP_LVL,"temper:%.2f°C\r\n",DS18B20_GetTemperture());
-//				LED1(0); 
+			
+			printf("SRAMIN:%d\r\n",my_mem_perused(SRAMIN));
+			printf("SRAMEX:%d\r\n",my_mem_perused(SRAMEX));
+			myfree(sramx,p);//释放内存
+				p=NULL;			//指向空地址
+			sramx++; 
+			if(sramx>1)
+				sramx=0;
+			//				LED1(0); 
 			
 		}
 		if(time7 == 500)
 		{
+			p=mymalloc(sramx,2*1024);//申请2K字节
+			if(p!=NULL)printf("2K内存申请成功！\r\n");
 //				LED1(1); 
 		}
 }

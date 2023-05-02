@@ -35,5 +35,6 @@
 .\objects\bsp_time.o: ..\User\bsp_drive\bsp_led\bsp_led.h
 .\objects\bsp_time.o: ..\User\bsp_drive\bsp_adc\bsp_adc.h
 .\objects\bsp_time.o: ..\User\bsp_drive\bsp_ds18b20\bsp_ds18b20.h
+.\objects\bsp_time.o: ..\User\user\malloc\malloc.h
 .\objects\bsp_time.o: ..\User\user\log\log.h
 .\objects\bsp_time.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\string.h

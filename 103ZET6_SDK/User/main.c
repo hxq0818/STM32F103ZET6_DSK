@@ -21,6 +21,8 @@
 #include "bsp_adc.h"
 #include "bsp_rtc.h"
 #include "bsp_ds18b20.h"
+#include "bsp_sram.h"
+#include "malloc.h" 
 
 #include "log.h"
 
@@ -36,11 +38,6 @@ float ADC_ConvertedValueLocal;
 int main(void)
 {	
 
-	
-	
-	
-	// // TIM 计数器的驱动时钟
-	// uint32_t TIM_PscCLK = 72000000 / (TIME5_GENERAL_TIM_PSC+1);
 
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
 	/* 配置USART1 */
@@ -69,6 +66,9 @@ int main(void)
 	
 	RTC_Init();
 	
+	my_mem_init(SRAMIN);		//初始化内部内存池
+	my_mem_init(SRAMEX);		//初始化外部内存池
+	
 	RTC_Alarm_Set(2020,7,23,15,5,0);
 	
 	while(DS18B20_Init())
@@ -80,7 +80,6 @@ int main(void)
 	
 	while (1)
 	{
-
 	}
 }
 

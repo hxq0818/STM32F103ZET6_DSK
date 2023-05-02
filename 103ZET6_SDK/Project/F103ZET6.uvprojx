@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\CMSIS;..\Libraries\FWlib\inc;..\User;..\User\project_config;..\User\bsp_drive\bsp_led;..\User\bsp_drive\bsp_beep;..\User\bsp_drive\bsp_key;..\User\bsp_drive\bsp_SysTick;..\User\bsp_drive\bsp_exti;..\User\bsp_drive\bsp_usart;..\User\user\log;..\User\bsp_drive\bsp_wwdg;..\User\bsp_drive\bsp_time;..\User\bsp_drive\bsp_adc;..\User\bsp_drive\bsp_rtc;..\User\bsp_drive\bsp_ds18b20</IncludePath>
+              <IncludePath>..\Libraries\CMSIS;..\Libraries\FWlib\inc;..\User;..\User\project_config;..\User\bsp_drive\bsp_led;..\User\bsp_drive\bsp_beep;..\User\bsp_drive\bsp_key;..\User\bsp_drive\bsp_SysTick;..\User\bsp_drive\bsp_exti;..\User\bsp_drive\bsp_usart;..\User\user\log;..\User\bsp_drive\bsp_wwdg;..\User\bsp_drive\bsp_time;..\User\bsp_drive\bsp_adc;..\User\bsp_drive\bsp_rtc;..\User\bsp_drive\bsp_ds18b20;..\User\bsp_drive\bsp_sram;..\User\user\malloc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -597,6 +597,11 @@
               <FileType>1</FileType>
               <FilePath>..\User\bsp_drive\bsp_ds18b20\bsp_ds18b20.c</FilePath>
             </File>
+            <File>
+              <FileName>bsp_sram.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_drive\bsp_sram\bsp_sram.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -606,6 +611,11 @@
               <FileName>log.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\user\log\log.c</FilePath>
+            </File>
+            <File>
+              <FileName>malloc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\user\malloc\malloc.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -41,5 +41,7 @@
 .\objects\main.o: ..\User\bsp_drive\bsp_adc\bsp_adc.h
 .\objects\main.o: ..\User\bsp_drive\bsp_rtc\bsp_rtc.h
 .\objects\main.o: ..\User\bsp_drive\bsp_ds18b20\bsp_ds18b20.h
+.\objects\main.o: ..\User\bsp_drive\bsp_sram\bsp_sram.h
+.\objects\main.o: ..\User\user\malloc\malloc.h
 .\objects\main.o: ..\User\user\log\log.h
 .\objects\main.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\string.h
