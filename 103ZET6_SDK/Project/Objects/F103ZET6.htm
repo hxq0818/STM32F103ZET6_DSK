@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\F103ZET6.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\F103ZET6.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri May 05 21:04:45 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri May 05 21:23:59 2023
 <BR><P>
 <H3>Maximum Stack Usage =        656 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -650,9 +650,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
 <LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_ReadID
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_SetSpeed
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_Init
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_ReadID
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -666,8 +666,8 @@ Global Symbols
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_ReadWriteByte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_read
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Write
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Write
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_read
 </UL>
 
 <P><STRONG><a name="[8d]"></a>EN25QXX_ReadID</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, bsp_en25q128.o(i.EN25QXX_ReadID))
@@ -861,7 +861,8 @@ Global Symbols
 <P><STRONG><a name="[56]"></a>GPIO_Init</STRONG> (Thumb, 278 bytes, Stack size 24 bytes, stm32f10x_gpio.o(i.GPIO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDA_OUT
+<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_Init
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDA_OUT
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDA_IN
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Init
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DS18B20_IO_OUT
@@ -877,7 +878,6 @@ Global Symbols
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DS18B20_Init
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BEEP_GPIO_Config
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC2_Init
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_Init
 </UL>
 
 <P><STRONG><a name="[80]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_ReadInputDataBit))
@@ -891,7 +891,12 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[72]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_ResetBits))
-<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_NAck
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Write_Page
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Write_Enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_ReadSR
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Read
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Erase_Sector
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_NAck
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Ack
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Wait_Ack
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Stop
@@ -903,15 +908,15 @@ Global Symbols
 <LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI0_IRQHandler
 <LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_ReadID
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BEEP_GPIO_Config
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Write_Page
+</UL>
+
+<P><STRONG><a name="[84]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_SetBits))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Write_Page
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Write_Enable
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_ReadSR
 <LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Read
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Erase_Sector
-</UL>
-
-<P><STRONG><a name="[84]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_SetBits))
-<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_NAck
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_NAck
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Ack
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Wait_Ack
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Stop
@@ -925,11 +930,6 @@ Global Symbols
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_GPIO_Config
 <LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_ReadID
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Init
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Write_Page
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Write_Enable
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_ReadSR
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Read
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Erase_Sector
 </UL>
 
 <P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_it.o(i.HardFault_Handler))
@@ -1135,16 +1135,17 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[6e]"></a>RCC_APB1PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_APB1PeriphClockCmd))
-<BR><BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_Set
+<BR><BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_Init
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_Set
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_Input_Capture
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_Init
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_Alarm_Set
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BASIC_TIM_Init
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_Init
 </UL>
 
 <P><STRONG><a name="[54]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd))
-<BR><BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Init
+<BR><BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_Init
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Init
 <LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_Input_Capture
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_Init
@@ -1157,7 +1158,6 @@ Global Symbols
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BEEP_GPIO_Config
 <LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Temp_Init
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC2_Init
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_Init
 </UL>
 
 <P><STRONG><a name="[5f]"></a>RCC_APB2PeriphResetCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_APB2PeriphResetCmd))
@@ -1683,13 +1683,13 @@ Global Symbols
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_ReceiveData
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_GetFlagStatus
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_ReadID
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_Init
+<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_Init
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Write_Page
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Write_Enable
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_ReadSR
 <LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Read
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Erase_Sector
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_ReadID
 </UL>
 
 <P><STRONG><a name="[8c]"></a>SPI2_SetSpeed</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, bsp_spi.o(i.SPI2_SetSpeed))
@@ -2016,9 +2016,9 @@ Global Symbols
 <P><STRONG><a name="[86]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf5.o(i.__0printf$5))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Erase_Sector
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_IRQHandler
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Init
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Erase_Sector
 </UL>
 
 <P><STRONG><a name="[147]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
@@ -2056,9 +2056,9 @@ Global Symbols
 <P><STRONG><a name="[124]"></a>disk_read</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, diskio.o(i.disk_read))
 <BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = disk_read &rArr; SD_ReadDisk &rArr; SD_ReadMultiBlocks &rArr; SD_DMA_Config &rArr; DMA_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_Init
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Read
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_Init
 <LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_ReadDisk
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Read
 </UL>
 <BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
 </UL>
@@ -2070,9 +2070,9 @@ Global Symbols
 <P><STRONG><a name="[125]"></a>disk_write</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, diskio.o(i.disk_write))
 <BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = disk_write &rArr; SD_WriteDisk &rArr; SD_WriteBlock &rArr; SD_Init &rArr; SD_EnableWideBusOperation &rArr; SDEnWideBus &rArr; FindSCR &rArr; CmdResp1Error
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_Init
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Write
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_Init
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_WriteDisk
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EN25QXX_Write
 </UL>
 <BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_mkfs
 <LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sync_window

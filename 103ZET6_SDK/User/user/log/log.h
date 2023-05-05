@@ -36,7 +36,7 @@
 #define HXQ_DEBUG_MODULE_AT24C02_LVL								0		//10
 #define HXQ_DEBUG_MODULE_EN25Q128_LVL								0		//11
 #define HXQ_DEBUG_MODULE_SD_LVL								      0		//12
-#define HXQ_DEBUG_MODULE_FATFS_LVL								   0		//12
+#define HXQ_DEBUG_MODULE_FATFS_LVL								  0		//12
 
 #define HXQ_LOG_MAX_BUFF_SIZE 258
 extern unsigned char hxq_log_buff[HXQ_LOG_MAX_BUFF_SIZE];
