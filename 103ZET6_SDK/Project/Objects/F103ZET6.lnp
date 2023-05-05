@@ -39,8 +39,17 @@
 ".\objects\bsp_rtc.o"
 ".\objects\bsp_ds18b20.o"
 ".\objects\bsp_sram.o"
+".\objects\bsp_at24c02.o"
+".\objects\bsp_iic.o"
+".\objects\bsp_en25q128.o"
+".\objects\bsp_spi.o"
+".\objects\bsp_sd.o"
 ".\objects\log.o"
 ".\objects\malloc.o"
+".\objects\ff.o"
+".\objects\diskio.o"
+".\objects\cc936.o"
+".\objects\fatfs_app.o"
 --library_type=microlib --strict --scatter ".\Objects\F103ZET6.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

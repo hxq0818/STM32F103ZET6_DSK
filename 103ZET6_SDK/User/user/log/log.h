@@ -4,7 +4,7 @@
  * @Author: xiaoqing.huang
  * @Date: 2023-04-16 20:40:24
  * @LastEditors: LAPTOP-4DIHEQ1Q
- * @LastEditTime: 2023-04-19 20:03:47
+ * @LastEditTime: 2023-05-05 21:03:53
  */
 
 #ifndef _LOG_H_
@@ -28,8 +28,15 @@
 #define HXQ_DEBUG_MODULE_WWDG_LVL       						0		//5
 #define HXQ_DEBUG_MODULE_TIM_LVL       							0  	//6
 #define HXQ_DEBUG_MODULE_ADC_LVL       							0 	//7
-#define HXQ_DEBUG_MODULE_TEP_LVL										8		//8
+#define HXQ_DEBUG_MODULE_TEP_LVL										0		//8
 #define HXQ_DEBUG_MODULE_RTC_LVL										0		//9
+#define HXQ_DEBUG_MODULE_RTC_LVL										0		//9
+#define HXQ_DEBUG_MODULE_RTC_LVL										0		//9
+#define HXQ_DEBUG_MODULE_RTC_LVL										0		//9
+#define HXQ_DEBUG_MODULE_AT24C02_LVL								0		//10
+#define HXQ_DEBUG_MODULE_EN25Q128_LVL								0		//11
+#define HXQ_DEBUG_MODULE_SD_LVL								      0		//12
+#define HXQ_DEBUG_MODULE_FATFS_LVL								   0		//12
 
 #define HXQ_LOG_MAX_BUFF_SIZE 258
 extern unsigned char hxq_log_buff[HXQ_LOG_MAX_BUFF_SIZE];

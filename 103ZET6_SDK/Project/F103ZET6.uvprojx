@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\CMSIS;..\Libraries\FWlib\inc;..\User;..\User\project_config;..\User\bsp_drive\bsp_led;..\User\bsp_drive\bsp_beep;..\User\bsp_drive\bsp_key;..\User\bsp_drive\bsp_SysTick;..\User\bsp_drive\bsp_exti;..\User\bsp_drive\bsp_usart;..\User\user\log;..\User\bsp_drive\bsp_wwdg;..\User\bsp_drive\bsp_time;..\User\bsp_drive\bsp_adc;..\User\bsp_drive\bsp_rtc;..\User\bsp_drive\bsp_ds18b20;..\User\bsp_drive\bsp_sram;..\User\user\malloc</IncludePath>
+              <IncludePath>..\Libraries\CMSIS;..\Libraries\FWlib\inc;..\User;..\User\project_config;..\User\bsp_drive\bsp_led;..\User\bsp_drive\bsp_beep;..\User\bsp_drive\bsp_key;..\User\bsp_drive\bsp_SysTick;..\User\bsp_drive\bsp_exti;..\User\bsp_drive\bsp_usart;..\User\user\log;..\User\bsp_drive\bsp_wwdg;..\User\bsp_drive\bsp_time;..\User\bsp_drive\bsp_adc;..\User\bsp_drive\bsp_rtc;..\User\bsp_drive\bsp_ds18b20;..\User\bsp_drive\bsp_sram;..\User\user\malloc;..\User\bsp_drive\bsp_at24c02;..\User\bsp_drive\bsp_iic;..\User\bsp_drive\bsp_en25q128;..\User\bsp_drive\bsp_spi;..\User\bsp_drive\bsp_sd;..\User\user\Fatfs\src;..\User\user\Fatfs\fatfs_app</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -602,6 +602,31 @@
               <FileType>1</FileType>
               <FilePath>..\User\bsp_drive\bsp_sram\bsp_sram.c</FilePath>
             </File>
+            <File>
+              <FileName>bsp_at24c02.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_drive\bsp_at24c02\bsp_at24c02.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_iic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_drive\bsp_iic\bsp_iic.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_en25q128.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_drive\bsp_en25q128\bsp_en25q128.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_drive\bsp_spi\bsp_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_sd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_drive\bsp_sd\bsp_sd.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -616,6 +641,31 @@
               <FileName>malloc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\user\malloc\malloc.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>fatfs</GroupName>
+          <Files>
+            <File>
+              <FileName>ff.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\user\Fatfs\src\ff.c</FilePath>
+            </File>
+            <File>
+              <FileName>diskio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\user\Fatfs\src\diskio.c</FilePath>
+            </File>
+            <File>
+              <FileName>cc936.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\user\Fatfs\src\option\cc936.c</FilePath>
+            </File>
+            <File>
+              <FileName>fatfs_app.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\user\Fatfs\fatfs_app\fatfs_app.c</FilePath>
             </File>
           </Files>
         </Group>

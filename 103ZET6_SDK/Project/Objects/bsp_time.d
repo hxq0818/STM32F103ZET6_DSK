@@ -36,5 +36,8 @@
 .\objects\bsp_time.o: ..\User\bsp_drive\bsp_adc\bsp_adc.h
 .\objects\bsp_time.o: ..\User\bsp_drive\bsp_ds18b20\bsp_ds18b20.h
 .\objects\bsp_time.o: ..\User\user\malloc\malloc.h
+.\objects\bsp_time.o: ..\User\bsp_drive\bsp_at24c02\bsp_at24c02.h
+.\objects\bsp_time.o: ..\User\bsp_drive\bsp_iic\bsp_iic.h
+.\objects\bsp_time.o: ..\User\bsp_drive\bsp_en25q128\bsp_en25q128.h
 .\objects\bsp_time.o: ..\User\user\log\log.h
 .\objects\bsp_time.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\string.h

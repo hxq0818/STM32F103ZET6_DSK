@@ -43,5 +43,14 @@
 .\objects\main.o: ..\User\bsp_drive\bsp_ds18b20\bsp_ds18b20.h
 .\objects\main.o: ..\User\bsp_drive\bsp_sram\bsp_sram.h
 .\objects\main.o: ..\User\user\malloc\malloc.h
+.\objects\main.o: ..\User\bsp_drive\bsp_iic\bsp_iic.h
+.\objects\main.o: ..\User\bsp_drive\bsp_at24c02\bsp_at24c02.h
+.\objects\main.o: ..\User\bsp_drive\bsp_spi\bsp_spi.h
+.\objects\main.o: ..\User\bsp_drive\bsp_en25q128\bsp_en25q128.h
+.\objects\main.o: ..\User\bsp_drive\bsp_sd\bsp_sd.h
+.\objects\main.o: ..\User\user\Fatfs\src\ff.h
+.\objects\main.o: ..\User\user\Fatfs\src\integer.h
+.\objects\main.o: ..\User\user\Fatfs\src\ffconf.h
+.\objects\main.o: ..\User\user\Fatfs\fatfs_app\fatfs_app.h
 .\objects\main.o: ..\User\user\log\log.h
 .\objects\main.o: D:\Installation_Path\Keil\Core\ARM\ARMCC\Bin\..\include\string.h

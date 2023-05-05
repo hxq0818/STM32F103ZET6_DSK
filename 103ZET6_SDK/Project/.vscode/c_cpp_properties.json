@@ -21,10 +21,18 @@
                 "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_ds18b20",
                 "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_sram",
                 "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\user\\malloc",
+                "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_at24c02",
+                "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_iic",
+                "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_en25q128",
+                "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_spi",
+                "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\bsp_drive\\bsp_sd",
+                "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\user\\Fatfs\\src",
+                "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\user\\Fatfs\\fatfs_app",
                 "D:\\Installation_Path\\Keil\\Core\\ARM\\ARMCC\\include",
                 "D:\\Installation_Path\\Keil\\Core\\ARM\\ARMCC\\include\\rw",
                 "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\Libraries\\CMSIS\\startup",
                 "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\Libraries\\FWlib\\src",
+                "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\User\\user\\Fatfs\\src\\option",
                 "e:\\hxq_work\\STM32\\STM32F103ZET6_DSK\\103ZET6_SDK\\Doc"
             ],
             "defines": [

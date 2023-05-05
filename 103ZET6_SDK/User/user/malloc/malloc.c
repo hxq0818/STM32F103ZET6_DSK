@@ -83,16 +83,16 @@ u32 my_mem_malloc(u8 memx,u32 size)
     if(size%memblksize[memx])xmemb++;  
     for(offset=memtblsize[memx]-1;offset>=0;offset--)//搜索整个内存控制区  
     {     
-		if(!malloc_cortol.memmap[memx][offset])kmemb++;//连续空内存块数增加
-		else kmemb=0;								//连续内存块清零
-		if(kmemb==xmemb)							//找到了连续nmemb个空内存块
-		{
-            for(i=0;i<xmemb;i++)  					//标注内存块非空 
-            {  
-                malloc_cortol.memmap[memx][offset+i]=xmemb;  
-            }  
-            return (offset*memblksize[memx]);//返回偏移地址  
-		}
+			if(!malloc_cortol.memmap[memx][offset])kmemb++;//连续空内存块数增加
+			else kmemb=0;								//连续内存块清零
+			if(kmemb==xmemb)							//找到了连续nmemb个空内存块
+			{
+							for(i=0;i<xmemb;i++)  					//标注内存块非空 
+							{  
+									malloc_cortol.memmap[memx][offset+i]=xmemb;  
+							}  
+							return (offset*memblksize[memx]);//返回偏移地址  
+			}
     }  
     return 0XFFFFFFFF;//未找到符合分配条件的内存块  
 }  

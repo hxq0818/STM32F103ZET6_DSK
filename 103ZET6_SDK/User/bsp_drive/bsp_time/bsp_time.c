@@ -15,6 +15,8 @@
 #include "bsp_adc.h"
 #include "bsp_ds18b20.h"
 #include "malloc.h"
+#include "bsp_at24c02.h"
+#include "bsp_en25q128.h"
 
 #include "log.h"
 volatile uint32_t time6 = 0; // ms 计时变量 
@@ -166,8 +168,8 @@ void TIM7_Init(void)
 	// 使能计数器
     TIM_Cmd(TIME7_BASIC_TIM, ENABLE);	
 }
-	u8 *p=0;
-	u8 sramx=1;	//默认为内部sram
+
+
 void  TIME7_BASIC_TIM_IRQHandler (void)
 {
 	if ( TIM_GetITStatus( TIME7_BASIC_TIM, TIM_IT_Update) != RESET ) 
@@ -185,20 +187,13 @@ void  TIME7_BASIC_TIM_IRQHandler (void)
 			DEBUG_LOG(HXQ_DEBUG_MODULE_ADC_LVL,"lsens_value:%d\r\n",Lsens_Get_Val());
 			DEBUG_LOG(HXQ_DEBUG_MODULE_TEP_LVL,"temper:%.2f°C\r\n",DS18B20_GetTemperture());
 			
-			printf("SRAMIN:%d\r\n",my_mem_perused(SRAMIN));
-			printf("SRAMEX:%d\r\n",my_mem_perused(SRAMEX));
-			myfree(sramx,p);//释放内存
-				p=NULL;			//指向空地址
-			sramx++; 
-			if(sramx>1)
-				sramx=0;
+			
 			//				LED1(0); 
 			
 		}
 		if(time7 == 500)
 		{
-			p=mymalloc(sramx,2*1024);//申请2K字节
-			if(p!=NULL)printf("2K内存申请成功！\r\n");
+			
 //				LED1(1); 
 		}
 }
@@ -277,18 +272,8 @@ void TIM5_Input_Capture(void)
 	// 使能计数器
 	TIM_Cmd(TIME5_GENERAL_TIM, ENABLE);
 }
-void Enter_Standby_Mode(void)
-{
-		
-	RCC_APB1PeriphClockCmd(RCC_APB1Periph_PWR,ENABLE);//使能PWR外设时钟
-	
-	PWR_ClearFlag(PWR_FLAG_WU);//清除Wake-up 标志
-	
-	PWR_WakeUpPinCmd(ENABLE);//使能唤醒管脚	使能或者失能唤醒管脚功能
-	
-	
-	PWR_EnterSTANDBYMode();//进入待机模式
-}
+
+
 void TIME5_GENERAL_TIM_INT_FUN(void)
 {
 	// 当要被捕获的信号的周期大于定时器的最长定时时，定时器就会溢出，产生更新中断
@@ -345,10 +330,8 @@ void TIME5_GENERAL_TIM_INT_FUN(void)
 			// 打印高电平脉宽时间
 			printf("Capture_Period:%d Capture_CcrValue:%d\r\n",TIM_ICUserValueStructure.Capture_Period,TIM_ICUserValueStructure.Capture_CcrValue);
 			printf ( "\r\n测得高电平脉宽时间：%d.%d s\r\n",time/TIM_PscCLK,time%TIM_PscCLK );
-			if(time/TIM_PscCLK<3)
-			{
-				Enter_Standby_Mode();
-			}
+			AT24CXX_WriteOneByte(0,time/TIM_PscCLK);
+			printf("读取的数据是：%d\r\n",AT24CXX_ReadOneByte(0));
 			TIM_ICUserValueStructure.Capture_FinishFlag = 0;			
 		}	
 	}		
